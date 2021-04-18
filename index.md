@@ -1,37 +1,17 @@
 ## Welcome to PetitParser
 
-You can use the [editor on GitHub](https://github.com/petitparser/petitparser.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+Grammars for programming languages are traditionally specified statically. They are hard to compose and reuse due to ambiguities that inevitably arise. PetitParser combines ideas from [scannnerless parsing](https://en.wikipedia.org/wiki/Scannerless_parsing), [parser combinators](https://en.wikipedia.org/wiki/Parser_combinator), [parsing expression grammars](https://en.wikipedia.org/wiki/Parsing_expression_grammar) (PEG) and packrat parsers to model grammars and parsers as objects that can be reconfigured dynamically.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+PetitParser is available in numerous programming languages:
 
-### Markdown
+- [Dart](https://github.com/petitparser/dart-petitparser)
+- [Java](https://github.com/petitparser/java-petitparser)
+- [PHP](https://github.com/mindplay-dk/petitparserphp)
+- [Smalltalk](https://www.lukas-renggli.ch/smalltalk/helvetia/petitparser)
+- [Swift](https://github.com/philipparndt/swift-petitparser)
+- [TypeScript](https://github.com/mindplay-dk/petitparser-ts)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+To see PetitParser in action, check out these web-based examples:
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/petitparser/petitparser.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+- [Lisp Interpreter](/examples/lisp/lisp.html): This example contains a Lisp Interpreter. The code is reasonably complete to run and evaluate complex programs.
+- [Prolog Interpreter](/examples/prolog/prolog.html): This example contains a Prolog Interpreter. The code is reasonably complete to run and evaluate basic programs.
