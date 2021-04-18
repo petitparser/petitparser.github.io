@@ -14,8 +14,9 @@ jobs:
         run: |
           cd petitparser_examples
           dart pub get
+          dart pub global activate webdev
           webdev build --release
-      - name: Deploy
+      - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
