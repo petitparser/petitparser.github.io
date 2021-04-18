@@ -16,6 +16,7 @@ jobs:
           dart pub get
           dart pub global activate webdev
           webdev build --release
+          rm -rf build/packages
           touch .nojekyll
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v3
