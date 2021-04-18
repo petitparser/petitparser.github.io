@@ -3,4 +3,4 @@ show_downloads: false
 google_analytics: G-QK0KCHXW3F
 
 title: PetitParser
-description: Dynamic parser combinators in Dart.
+description: Dynamic parser combinators.

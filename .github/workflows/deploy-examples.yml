@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.1
-        with: 
+        with:
           repository: petitparser/dart-petitparser
       - name: Install Dart
         uses: dart-lang/setup-dart@v1.0
@@ -16,6 +16,7 @@ jobs:
           dart pub get
           dart pub global activate webdev
           webdev build --release
+          touch .nojekyll
       - name: Deploy to Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
@@ -23,4 +24,4 @@ jobs:
           publish_dir: ./petitparser_examples/build
           publish_branch: main
           destination_dir: examples
-          
+          enable_jekyll: true
