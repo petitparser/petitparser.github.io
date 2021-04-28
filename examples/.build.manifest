@@ -40,3 +40,5 @@ packages/test/src/runner/browser/static/host.dart.js
 packages/test/src/runner/browser/static/index.html
 prolog/prolog.dart.js
 prolog/prolog.html
+smalltalk/smalltalk.dart.js
+smalltalk/smalltalk.html
