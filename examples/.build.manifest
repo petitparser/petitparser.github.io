@@ -42,3 +42,5 @@ prolog/prolog.dart.js
 prolog/prolog.html
 smalltalk/smalltalk.dart.js
 smalltalk/smalltalk.html
+uri/uri.dart.js
+uri/uri.html
