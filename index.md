@@ -12,7 +12,8 @@ PetitParser allows you to create efficient parsers in your favorite programming 
 
 PetitParser combines ideas from [scannnerless parsing](https://en.wikipedia.org/wiki/Scannerless_parsing), [parser combinators](https://en.wikipedia.org/wiki/Parser_combinator), [parsing expression grammars](https://en.wikipedia.org/wiki/Parsing_expression_grammar) (PEG) and packrat parsers to model grammars and parsers as objects that can be reconfigured dynamically.
 
-To see PetitParser in action, check out these web-based examples:
+To see PetitParser in action, check out these web-based examples using [PetitParser for Dart](https://github.com/petitparser/dart-petitparser):
 
 - [Lisp Interpreter](/examples/lisp/lisp.html)
 - [Prolog Interpreter](/examples/prolog/prolog.html)
+- [URI Parser](/examples/uri/uri.html)
