@@ -1,6 +1,8 @@
 .dart_tool/package_config.json
 .packages
 index.html
+json/json.dart.js
+json/json.html
 lisp/lisp.dart.js
 lisp/lisp.html
 packages/$sdk/_internal/strong.sum
