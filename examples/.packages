@@ -36,6 +36,7 @@ http_parser:packages/http_parser/
 io:packages/io/
 js:packages/js/
 json_annotation:packages/json_annotation/
+lints:packages/lints/
 logging:packages/logging/
 matcher:packages/matcher/
 meta:packages/meta/
