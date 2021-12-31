@@ -3,9 +3,11 @@
 PetitParser allows you to create efficient parsers in your favorite programming language easily:
 
 - [C#](https://github.com/RichoM/dotnet.PetitParser)
+- [Clojure](https://github.com/RichoM/clj-petitparser)
 - [Dart](https://github.com/petitparser/dart-petitparser)
 - [Java](https://github.com/petitparser/java-petitparser)
 - [PHP](https://github.com/mindplay-dk/petitparserphp)
+- [Python](https://github.com/profMagija/py-petitparser)
 - [Smalltalk](https://www.lukas-renggli.ch/smalltalk/helvetia/petitparser)
 - [Swift](https://github.com/philipparndt/swift-petitparser)
 - [TypeScript](https://github.com/mindplay-dk/petitparser-ts)
