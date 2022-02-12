@@ -5,6 +5,8 @@ json/json.dart.js
 json/json.html
 lisp/lisp.dart.js
 lisp/lisp.html
+math/math.dart.js
+math/math.html
 packages/$sdk/_internal/strong.sum
 packages/$sdk/dev_compiler/kernel/amd/dart_sdk.js
 packages/$sdk/dev_compiler/kernel/amd/require.js
