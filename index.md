@@ -18,9 +18,10 @@ To see PetitParser in action, check out these web-based [examples](https://githu
 
 - [Lisp Interpreter](/examples/lisp/lisp.html)
 - [Prolog Interpreter](/examples/prolog/prolog.html)
+- [Expression Parser](/examples/math/math.html)
 - [URI Parser](/examples/uri/uri.html)
 
-There are some other more experimental examples avaiable:
+There are some other more experimental examples available:
 
 - [JSON Parser](/examples/json/json.html) (JavaScript version is slow)
 - [Smalltak Parser](/examples/smalltalk/smalltalk.html) (prints the AST)
