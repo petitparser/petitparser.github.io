@@ -18,7 +18,6 @@ built_value:packages/built_value/
 characters:packages/characters/
 charcode:packages/charcode/
 checked_yaml:packages/checked_yaml/
-cli_util:packages/cli_util/
 clock:packages/clock/
 code_builder:packages/code_builder/
 collection:packages/collection/
