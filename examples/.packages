@@ -16,7 +16,6 @@ build_web_compilers:packages/build_web_compilers/
 built_collection:packages/built_collection/
 built_value:packages/built_value/
 characters:packages/characters/
-charcode:packages/charcode/
 checked_yaml:packages/checked_yaml/
 clock:packages/clock/
 code_builder:packages/code_builder/
