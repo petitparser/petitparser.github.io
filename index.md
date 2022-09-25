@@ -6,6 +6,7 @@ PetitParser allows you to create efficient parsers in your favorite programming 
 - [Clojure](https://github.com/RichoM/clj-petitparser)
 - [Dart](https://github.com/petitparser/dart-petitparser)
 - [Java](https://github.com/petitparser/java-petitparser)
+- [Kotlin](https://github.com/petitparser/kotlin-petitparser)
 - [PHP](https://github.com/mindplay-dk/petitparserphp)
 - [Python](https://github.com/profMagija/py-petitparser)
 - [Smalltalk](https://www.lukas-renggli.ch/smalltalk/helvetia/petitparser)
