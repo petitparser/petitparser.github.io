@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3
         with:
           repository: petitparser/dart-petitparser-examples
       - name: Install
-        uses: dart-lang/setup-dart@v1.0
+        uses: dart-lang/setup-dart@v1.3
       - name: Build
         run: |
           dart pub get
