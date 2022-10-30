@@ -19,7 +19,8 @@ To see PetitParser in action, check out these web-based [examples](https://githu
 
 - [Lisp Interpreter](/examples/lisp/lisp.html)
 - [Prolog Interpreter](/examples/prolog/prolog.html)
-- [Expression Parser](/examples/math/math.html)
+- [Expression Evaluator](/examples/math/eval.html)
+- [Expression Plotter](/examples/math/plot.html)
 - [URI Parser](/examples/uri/uri.html)
 
 There are some other more experimental examples available:
