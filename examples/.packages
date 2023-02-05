@@ -29,6 +29,7 @@ fixnum:packages/fixnum/
 frontend_server_client:packages/frontend_server_client/
 glob:packages/glob/
 graphs:packages/graphs/
+http:packages/http/
 http_multi_server:packages/http_multi_server/
 http_parser:packages/http_parser/
 io:packages/io/
