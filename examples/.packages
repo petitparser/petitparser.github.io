@@ -73,5 +73,6 @@ vm_service:packages/vm_service/
 watcher:packages/watcher/
 web_socket_channel:packages/web_socket_channel/
 webkit_inspection_protocol:packages/webkit_inspection_protocol/
+xml:packages/xml/
 yaml:packages/yaml/
 $sdk:packages/$sdk/
