@@ -1979,10 +1979,7 @@ cM:function cM(a,b,c){this.a=a
 this.b=b
 this.$ti=c},
 dW:function dW(a){this.a=a},
-dN(a,b,c){var s=a.length
-if(s===0){b.toString
-return b}else if(s===1)return B.a.ga6(a)
-else return A.h6(a,null,c)},
+dN(a,b){return a.length===1?B.a.ga6(a):A.h6(a,null,b)},
 aL:function aL(a,b,c,d,e,f,g,h){var _=this
 _.a=a
 _.b=b
@@ -3910,11 +3907,12 @@ q.h("f<1>").a(a)
 q.h("aL<1>").a(b)
 q=b.$ti
 s=q.h("f<1>")
-q=q.c
-r=s.a(A.dN(b.b,s.a(a),q))
+s.a(a)
+r=b.b
+r=s.a(r.length===0?a:A.dN(r,q.c))
 s=A.bK(b.c,!0,s)
 s.push(r)
-return b.bh(b.bk(b.bi(b.bj(A.dN(s,null,q)))))},
+return b.bh(b.bk(b.bi(b.bj(A.dN(s,q.c)))))},
 $S(){return this.a.$ti.h("f<1>(f<1>,aL<1>)")}}
 A.aL.prototype={
 aZ(a,b,c,d,e){var s
@@ -3929,11 +3927,11 @@ return B.a.m(this.d,A.ac(c.h("f<0>").a(a),new A.e3(this,s.k(c).h("2(1,2)").a(b),
 bj(a){var s,r,q,p=this.$ti
 p.h("f<1>").a(a)
 s=this.d
-if(s.length===0)return a
+if(s.length===0)p=a
 else{r=p.h("S<1,~>")
 q=p.h("k<S<1,~>>")
 p=p.c
-return A.fC(A.fo(A.b9(A.dN(s,null,r),0,9007199254740991,r),a,q,p),new A.e_(this),q,p,p)}},
+p=A.fC(A.fo(A.b9(A.dN(s,r),0,9007199254740991,r),a,q,p),new A.e_(this),q,p,p)}return p},
 bi(a){this.$ti.h("f<1>").a(a)
 return a},
 bR(a,b,c){var s=this.$ti
@@ -3941,19 +3939,21 @@ return B.a.m(this.f,A.ac(c.h("f<0>").a(a),new A.e4(this,s.k(c).h("2(2,1,2)").a(b
 bk(a){var s,r,q,p=this.$ti
 p.h("f<1>").a(a)
 s=this.f
-if(s.length===0)return a
+if(s.length===0)p=a
 else{r=p.h("E<1,~>")
 q=p.c
-return A.ac(A.ho(a,A.dN(s,null,r),q,r),new A.e1(this),p.h("B<1,E<1,~>>"),q)}},
+q=A.ac(A.ho(a,A.dN(s,r),q,r),new A.e1(this),p.h("B<1,E<1,~>>"),q)
+p=q}return p},
 a9(a,b,c){var s=this.$ti
 return B.a.m(this.r,A.ac(c.h("f<0>").a(a),new A.e2(this,s.k(c).h("2(2,1,2)").a(b),c),c,s.h("E<1,~>")))},
 bh(a){var s,r,q,p=this.$ti
 p.h("f<1>").a(a)
 s=this.r
-if(s.length===0)return a
+if(s.length===0)p=a
 else{r=p.h("E<1,~>")
 q=p.c
-return A.ac(A.ho(a,A.dN(s,null,r),q,r),new A.dY(this),p.h("B<1,E<1,~>>"),q)}}}
+q=A.ac(A.ho(a,A.dN(s,r),q,r),new A.dY(this),p.h("B<1,E<1,~>>"),q)
+p=q}return p}}
 A.e3.prototype={
 $1(a){var s=this.c
 return new A.S(s.a(a),this.b,this.a.$ti.h("@<1>").k(s).h("S<1,2>"))},
