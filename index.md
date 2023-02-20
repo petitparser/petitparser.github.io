@@ -22,7 +22,7 @@ To see PetitParser in action, check out these web-based [examples](https://githu
 - [Expression Evaluator](/examples/math/eval.html)
 - [Expression Plotter](/examples/math/plot.html)
 - [URI Parser](/examples/uri/uri.html)
-- [XML Parser](/examples/xml/xml.html)
+- [XML/XPath Parser](/examples/xml/xml.html)
 
 There are some other more experimental examples available:
 
