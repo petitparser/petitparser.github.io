@@ -14,10 +14,16 @@
     <loc>https://petitparser.github.io/examples/prolog/prolog.html</loc>
   </url>
   <url>
-    <loc>https://petitparser.github.io/examples/math/math.html</loc>
+    <loc>https://petitparser.github.io/examples/math/eval.html</loc>
+  </url>
+  <url>
+    <loc>https://petitparser.github.io/examples/math/plot.html</loc>
   </url>
   <url>
     <loc>https://petitparser.github.io/examples/uri/uri.html</loc>
+  </url>
+  <url>
+    <loc>https://petitparser.github.io/examples/xml/xml.html</loc>
   </url>
   <url>
     <loc>https://petitparser.github.io/examples/json/json.html</loc>
