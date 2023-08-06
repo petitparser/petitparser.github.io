@@ -23,7 +23,6 @@ collection:packages/collection/
 convert:packages/convert/
 coverage:packages/coverage/
 crypto:packages/crypto/
-dart_internal:packages/dart_internal/
 dart_style:packages/dart_style/
 file:packages/file/
 fixnum:packages/fixnum/
