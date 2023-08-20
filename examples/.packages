@@ -24,6 +24,7 @@ convert:packages/convert/
 coverage:packages/coverage/
 crypto:packages/crypto/
 dart_style:packages/dart_style/
+data:packages/data/
 file:packages/file/
 fixnum:packages/fixnum/
 frontend_server_client:packages/frontend_server_client/
