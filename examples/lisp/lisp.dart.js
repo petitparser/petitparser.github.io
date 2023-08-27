@@ -4901,21 +4901,11 @@ s($,"mx","iw",()=>{var r=t.D
 return A.jN(new A.cp(A.jB(A.ad("^"),t.N),$.iy(),A.ae("cp<d?,I>")),new A.eY(),A.ae("d?"),r,r)})
 s($,"mv","iv",()=>new A.c9())
 s($,"mG","fU",()=>$.iv().cg(t.z))
-s($,"mF","iB",()=>{var r=A.dX("#input")
-r.toString
-return A.ae("bG").a(r)})
-s($,"mH","fV",()=>{var r=A.dX("#output")
-r.toString
-return A.ae("aq").a(r)})
-s($,"mB","fS",()=>{var r=A.dX("#console")
-r.toString
-return A.ae("aq").a(r)})
-s($,"mD","fT",()=>{var r=A.dX("#environment")
-r.toString
-return A.ae("aq").a(r)})
-s($,"mE","iA",()=>{var r=A.dX("#evaluate")
-r.toString
-return A.ae("hs").a(r)})
+s($,"mF","iB",()=>A.ae("bG").a(A.dX("#input")))
+s($,"mH","fV",()=>A.ae("aq").a(A.dX("#output")))
+s($,"mB","fS",()=>A.ae("aq").a(A.dX("#console")))
+s($,"mD","fT",()=>A.ae("aq").a(A.dX("#environment")))
+s($,"mE","iA",()=>A.ae("hs").a(A.dX("#evaluate")))
 s($,"mI","iC",()=>{var r=new A.dg(null,A.ao(t.F,t.z))
 r.t(A.y("define"),A.ln())
 r.t(A.y("lambda"),A.ls())

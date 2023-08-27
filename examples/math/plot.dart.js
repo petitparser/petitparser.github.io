@@ -4486,15 +4486,9 @@ return A.a_(A.i8(A.fl(A.o([$.hH(),$.hJ()],A.ak("q<f<z>>")),q),q),new A.e7(),!1,t
 s($,"kY","hG",()=>{var q=A.ak("h?"),p=t.A
 return A.fx(A.fv(new A.aE(A.i7(A.N("^"),t.N),$.hI()),q,p),new A.e3(),q,p,p)})
 s($,"l6","hL",()=>new A.eB().$0())
-s($,"l4","eE",()=>{var q=A.fa("#input")
-q.toString
-return A.ak("fE").a(q)})
-s($,"l3","fe",()=>{var q=A.fa("#error")
-q.toString
-return A.ak("av").a(q)})
-s($,"l1","fd",()=>{var q=A.fa("#canvas")
-q.toString
-return A.ak("al").a(q)})
+s($,"l4","eE",()=>A.ak("fE").a(A.fa("#input")))
+s($,"l3","fe",()=>A.ak("av").a(A.fa("#error")))
+s($,"l1","fd",()=>A.ak("al").a(A.fa("#canvas")))
 s($,"l7","ff",()=>{var q,p,o=$.fd(),n=o.getContext("2d")
 n.toString
 q=o.offsetWidth

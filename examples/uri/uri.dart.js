@@ -4583,12 +4583,8 @@ s($,"kZ","hP",()=>A.bQ(A.aw("^/?#",null),"authority"))
 s($,"l7","hX",()=>A.bQ(A.aw("^?#",null),"path"))
 s($,"la","i_",()=>A.bQ(A.aw("^#",null),"query"))
 s($,"l0","hR",()=>A.bQ(A.eE(),"fragment"))
-s($,"li","fp",()=>{var r=A.hu("#input")
-r.toString
-return A.T("aG").a(r)})
-s($,"lk","fq",()=>{var r=A.hu("#output")
-r.toString
-return A.T("aL").a(r)})})();(function nativeSupport(){!function(){var s=function(a){var m={}
+s($,"li","fp",()=>A.T("aG").a(A.hu("#input")))
+s($,"lk","fq",()=>A.T("aL").a(A.hu("#output")))})();(function nativeSupport(){!function(){var s=function(a){var m={}
 m[a]=1
 return Object.keys(hunkHelpers.convertToFastObject(m))[0]}
 v.getIsolateTag=function(a){return s("___dart_"+a+v.isolateTag)}
