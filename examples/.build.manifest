@@ -10,6 +10,7 @@ math/eval.html
 math/plot.dart.js
 math/plot.html
 packages/$sdk/dev_compiler/amd/require.js
+packages/$sdk/dev_compiler/ddc/ddc_module_loader.js
 packages/$sdk/dev_compiler/web/dart_stack_trace_mapper.js
 packages/_fe_analyzer_shared/src/parser/parser.md
 packages/analyzer/fix_data.yaml
@@ -32,6 +33,7 @@ packages/test/src/runner/browser/static/host.css
 packages/test/src/runner/browser/static/host.dart.js
 packages/test/src/runner/browser/static/index.html
 packages/test/src/runner/browser/static/run_wasm_chrome.js
+packages/web/fix_data.yaml
 prolog/prolog.dart.js
 prolog/prolog.html
 smalltalk/smalltalk.dart.js
