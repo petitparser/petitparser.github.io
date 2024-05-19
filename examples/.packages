@@ -1,4 +1,5 @@
 _fe_analyzer_shared:packages/_fe_analyzer_shared/
+_macros:packages/_macros/
 analyzer:packages/analyzer/
 archive:packages/archive/
 args:packages/args/
@@ -38,6 +39,7 @@ js:packages/js/
 json_annotation:packages/json_annotation/
 lints:packages/lints/
 logging:packages/logging/
+macros:packages/macros/
 matcher:packages/matcher/
 meta:packages/meta/
 mime:packages/mime/
@@ -72,6 +74,7 @@ typed_data:packages/typed_data/
 vm_service:packages/vm_service/
 watcher:packages/watcher/
 web:packages/web/
+web_socket:packages/web_socket/
 web_socket_channel:packages/web_socket_channel/
 webkit_inspection_protocol:packages/webkit_inspection_protocol/
 xml:packages/xml/
