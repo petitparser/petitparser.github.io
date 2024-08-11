@@ -1,5 +1,4 @@
 .dart_tool/package_config.json
-.packages
 index.html
 json/json.dart.js
 json/json.html
