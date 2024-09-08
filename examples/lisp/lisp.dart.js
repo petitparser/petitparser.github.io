@@ -3871,10 +3871,10 @@ s.append(q.a(q.a(r.document).createElement("br")))},
 $S:6}
 A.et.prototype={
 $1(a){var s,r,q,p,o,n=$.fc()
-n.innerHTML="Evaluating..."
+n.innerText="Evaluating..."
 q=t.m
 q.a(n.classList).value=""
-$.f9().innerHTML=""
+$.f9().innerText=""
 try{s=A.hi($.fb(),$.eA(),A.E($.hL().value))
 n.textContent=J.aE(s)}catch(p){r=A.aD(p)
 n=$.fc()

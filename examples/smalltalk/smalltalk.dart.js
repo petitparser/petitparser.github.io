@@ -4909,7 +4909,7 @@ $1(a){return this.a.$1(t.m.a(a))},
 $S:6}
 A.h1.prototype={
 $1(a){var s,r,q,p,o,n,m,l=$.hO()
-l.innerHTML="Evaluating..."
+l.innerText="Evaluating..."
 p=t.m
 p.a(l.classList).value=""
 try{s=$.jv().l(new A.af(A.N($.ju().value),0))
