@@ -1,10 +1,15 @@
 name: Deploy Examples
 on:
-  workflow_dispatch:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
   schedule:
     - cron: "0 0 * * 0"
+  workflow_dispatch:
 jobs:
   deploy:
+    name: Deploy Examples
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -12,7 +17,7 @@ jobs:
         with:
           repository: petitparser/dart-petitparser-examples
       - name: Install
-        uses: dart-lang/setup-dart@v1.3
+        uses: dart-lang/setup-dart@v1
       - name: Build
         run: |
           dart pub get
