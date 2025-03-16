@@ -3969,10 +3969,10 @@ s.append(q.a(q.a(r.document).createElement("br")))},
 $S:6}
 A.eA.prototype={
 $1(a){var s,r,q,p,o,n=$.fn()
-n.innerText="Evaluating..."
+n.textContent="Evaluating..."
 q=t.m
 q.a(n.classList).value=""
-$.fk().innerText=""
+$.fk().textContent=""
 try{s=A.hp($.fm(),$.eJ(),A.D($.hM().value))
 n.textContent=J.aG(s)}catch(p){r=A.aF(p)
 n=$.fn()

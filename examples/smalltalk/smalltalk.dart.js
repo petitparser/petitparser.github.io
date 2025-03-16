@@ -5040,7 +5040,7 @@ $1(a){return this.a.$1(t.m.a(a))},
 $S:7}
 A.h8.prototype={
 $1(a){var s,r,q,p,o,n,m,l=$.i_()
-l.innerText="Evaluating..."
+l.textContent="Evaluating..."
 p=t.m
 p.a(l.classList).value=""
 try{s=$.jB().l(new A.a6(A.J($.jA().value),0))
