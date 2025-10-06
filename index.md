@@ -1,4 +1,4 @@
-## Welcome to PetitParser
+# Welcome to PetitParser
 
 PetitParser allows you to create efficient parsers in your favorite programming language easily:
 
