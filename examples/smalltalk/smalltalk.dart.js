@@ -1031,7 +1031,7 @@ ll(a){var s=v.mangledGlobalNames[a]
 if(s!=null)return s
 return"minified:"+a},
 kD(a,b){var s=a.tR[b]
-for(;typeof s=="string";)s=a.tR[s]
+while(typeof s=="string")s=a.tR[s]
 return s},
 kC(a,b){var s,r,q,p,o,n=a.eT,m=n[b]
 if(m==null)return A.fR(a,b,!1)
@@ -1395,7 +1395,7 @@ e=r.c
 d=f.length
 c=e.length
 for(b=0,a=0;a<c;a+=3){a0=e[a]
-for(;!0;){if(b>=d)return!1
+for(;;){if(b>=d)return!1
 a1=f[b]
 b+=3
 if(a0<a1)return!1
@@ -1405,10 +1405,10 @@ continue}g=e[a+1]
 if(a2&&!g)return!1
 g=f[b-1]
 if(!A.L(a3,e[a+2],a7,g,a5))return!1
-break}}for(;b<d;){if(f[b+1])return!1
+break}}while(b<d){if(f[b+1])return!1
 b+=3}return!0},
 l_(a,b,c,d,e){var s,r,q,p,o,n=b.x,m=d.x
-for(;n!==m;){s=a.tR[n]
+while(n!==m){s=a.tR[n]
 if(s==null)return!1
 if(typeof s=="string"){n=s
 continue}r=s[m]
@@ -1490,7 +1490,7 @@ A.bi(b,p)
 return}b.a^=2
 A.bX(null,null,b.b,t.M.a(new A.fC(o,b)))},
 bi(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d={},c=d.a=a
-for(s=t.n,r=t.F;!0;){q={}
+for(s=t.n,r=t.F;;){q={}
 p=c.a
 o=(p&16)===0
 n=!o
@@ -1770,7 +1770,7 @@ iq(a,b,c){var s=J.at(b)
 if(!s.q())return a
 if(c.length===0){do a+=A.t(s.gt())
 while(s.q())}else{a+=A.t(s.gt())
-for(;s.q();)a=a+c+A.t(s.gt())}return a},
+while(s.q())a=a+c+A.t(s.gt())}return a},
 ie(a,b){return new A.dP(a,b.geS(),b.gfe(),b.gf1())},
 ke(){return A.aM(new Error())},
 by(a){if(typeof a=="number"||A.hE(a)||a==null)return J.br(a)
@@ -1812,7 +1812,7 @@ $.a5.pop()}s.a+=c
 r=s.a
 return r.charCodeAt(0)==0?r:r},
 l8(a,b){var s,r,q,p,o,n,m,l=a.gB(a),k=0,j=0
-while(!0){if(!(k<80||j<3))break
+for(;;){if(!(k<80||j<3))break
 if(!l.q())return
 s=A.t(l.gt())
 B.b.p(b,s)
@@ -1827,14 +1827,14 @@ if(0>=b.length)return A.r(b,-1)
 q=b.pop()
 k+=r.length+2}else{o=l.gt();++j
 for(;l.q();p=o,o=n){n=l.gt();++j
-if(j>100){while(!0){if(!(k>75&&j>3))break
+if(j>100){for(;;){if(!(k>75&&j>3))break
 if(0>=b.length)return A.r(b,-1)
 k-=b.pop().length+2;--j}B.b.p(b,"...")
 return}}q=A.t(p)
 r=A.t(o)
 k+=r.length+q.length+4}}if(j>b.length+2){k+=5
 m="..."}else m=null
-while(!0){if(!(k>80&&b.length>3))break
+for(;;){if(!(k>80&&b.length>3))break
 if(0>=b.length)return A.r(b,-1)
 k-=b.pop().length+2
 if(m==null){k+=5
@@ -2383,7 +2383,7 @@ if(m instanceof A.a){l=A.iP(m,j,k)
 p.a_(m,l)
 m=l}if(r.p(0,m))B.b.p(s,m)}}return a},
 iP(a,b,c){var s,r,q,p=A.ic(c.h("eO<0>"))
-for(;a instanceof A.a;){if(b.am(a))return c.h("j<0>").a(b.j(0,a))
+while(a instanceof A.a){if(b.am(a))return c.h("j<0>").a(b.j(0,a))
 else if(!p.p(0,a))throw A.h(A.fi("Recursive references detected: "+p.i(0)))
 a=a.$ti.h("j<1>").a(A.k4(a.a,a.b,null))}for(s=A.iz(p,p.r,p.$ti.c),r=s.$ti.c;s.q();){q=s.d
 b.N(0,q==null?r.a(q):q,a)}return a},
@@ -2606,7 +2606,7 @@ bw(a,b){var s,r
 if(0>=b)return""
 if(b===1||a.length===0)return a
 if(b!==b>>>0)throw A.h(B.A)
-for(s=a,r="";!0;){if((b&1)===1)r=s+r
+for(s=a,r="";;){if((b&1)===1)r=s+r
 b=b>>>1
 if(b===0)break
 s+=s}return r},
@@ -2989,7 +2989,7 @@ F(a,b){var s,r,q=this
 A.u(q).h("~(1,2)").a(b)
 s=q.e
 r=q.r
-for(;s!=null;){b.$2(s.a,s.b)
+while(s!=null){b.$2(s.a,s.b)
 if(r!==q.r)throw A.h(A.ae(q))
 s=s.c}},
 bE(a,b,c){var s,r=A.u(this)
@@ -3057,7 +3057,7 @@ o=m[q]
 l=a?l+A.ij(o):l+A.t(o)}l+=")"
 return l.charCodeAt(0)==0?l:l},
 dh(){var s,r=this.$s
-for(;$.fL.length<=r;)B.b.p($.fL,null)
+while($.fL.length<=r)B.b.p($.fL,null)
 s=$.fL[r]
 if(s==null){s=this.dg()
 B.b.N($.fL,r,s)}return s},
@@ -3181,11 +3181,11 @@ dE(a,b){var s,r,q
 a=A.aK(a)
 b=b
 s=this.a
-for(;!0;)try{r=s(this,a,b)
+for(;;)try{r=s(this,a,b)
 return r}catch(q){b=q
 a=1}},
 q(){var s,r,q,p,o=this,n=null,m=0
-for(;!0;){s=o.d
+for(;;){s=o.d
 if(s!=null)try{if(s.q()){o.b=s.gt()
 return!0}else o.d=null}catch(r){n=r
 m=1
@@ -3505,7 +3505,7 @@ s=!1
 if((p&4)!==0)if(p<256){s=q.r
 s=s==null?null:s.c==null
 s=s!==!1}if(s){p=(p&4294967291)>>>0
-q.e=p}}for(;!0;a=r){if((p&8)!==0){q.r=null
+q.e=p}}for(;;a=r){if((p&8)!==0){q.r=null
 return}r=(p&4)!==0
 if(a===r)break
 q.e=(p^64)>>>0
@@ -4069,7 +4069,7 @@ n=new A.m(q,s.a,r,n.h("m<1>"))}return n},
 m(a,b){var s=this,r=s.a.m(a,s.aj(s.b,a,b))
 return r<0?-1:s.aj(s.c,a,r)},
 aj(a,b,c){var s
-for(;!0;c=s){s=a.m(b,c)
+for(;;c=s){s=a.m(b,c)
 if(s<0)break}return c},
 gY(){return A.d([this.a,this.b,this.c],t.C)},
 a_(a,b){var s=this
@@ -4374,11 +4374,11 @@ if(b<r){s=b+1
 return(a.charCodeAt(b)&64512)===55296&&s<r&&(a.charCodeAt(s)&64512)===56320?s+1:s}return-1}}
 A.cB.prototype={
 l(a){var s=this,r=a.a,q=a.b,p=r.length,o=s.d,n=s.a,m=q,l=0
-while(!0){if(!(l<o&&m<p&&n.I(r.charCodeAt(m))))break;++m;++l}if(l>=s.c){o=B.c.J(r,q,m)
+for(;;){if(!(l<o&&m<p&&n.I(r.charCodeAt(m))))break;++m;++l}if(l>=s.c){o=B.c.J(r,q,m)
 o=new A.m(o,r,m,t.w)}else o=new A.l(s.b,r,m)
 return o},
 m(a,b){var s=a.length,r=this.d,q=this.a,p=0
-while(!0){if(!(p<r&&b<s&&q.I(a.charCodeAt(b))))break;++b;++p}return p>=this.c?b:-1},
+for(;;){if(!(p<r&&b<s&&q.I(a.charCodeAt(b))))break;++b;++p}return p>=this.c?b:-1},
 i(a){var s=this,r=s.T(0),q=s.d
 return r+"["+s.b+", "+s.c+".."+A.t(q===9007199254740991?"*":q)+"]"},
 K(a){var s=this
@@ -4438,7 +4438,7 @@ gbx(){return new A.bT(this.ck(),t.dD)},
 ck(){var s=this
 return function(){var r=0,q=1,p=[],o,n,m
 return function $async$gbx(a,b,c){if(b===1){p.push(c)
-r=q}while(true)switch(r){case 0:o=s.a,n=s.b,m=0
+r=q}for(;;)switch(r){case 0:o=s.a,n=s.b,m=0
 case 2:if(!(m<o.length)){r=4
 break}r=5
 return a.b=o[m],1

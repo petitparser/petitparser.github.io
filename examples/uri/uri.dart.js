@@ -895,7 +895,7 @@ jc(a){var s=v.mangledGlobalNames[a]
 if(s!=null)return s
 return"minified:"+a},
 iv(a,b){var s=a.tR[b]
-for(;typeof s=="string";)s=a.tR[s]
+while(typeof s=="string")s=a.tR[s]
 return s},
 iu(a,b){var s,r,q,p,o,n=a.eT,m=n[b]
 if(m==null)return A.dY(a,b,!1)
@@ -1259,7 +1259,7 @@ e=r.c
 d=f.length
 c=e.length
 for(b=0,a=0;a<c;a+=3){a0=e[a]
-for(;!0;){if(b>=d)return!1
+for(;;){if(b>=d)return!1
 a1=f[b]
 b+=3
 if(a0<a1)return!1
@@ -1269,10 +1269,10 @@ continue}g=e[a+1]
 if(a2&&!g)return!1
 g=f[b-1]
 if(!A.x(a3,e[a+2],a7,g,a5))return!1
-break}}for(;b<d;){if(f[b+1])return!1
+break}}while(b<d){if(f[b+1])return!1
 b+=3}return!0},
 iS(a,b,c,d,e){var s,r,q,p,o,n=b.x,m=d.x
-for(;n!==m;){s=a.tR[n]
+while(n!==m){s=a.tR[n]
 if(s==null)return!1
 if(typeof s=="string"){n=s
 continue}r=s[m]
@@ -1354,7 +1354,7 @@ A.aw(b,p)
 return}b.a^=2
 A.aZ(null,null,b.b,t.M.a(new A.dK(o,b)))},
 aw(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d={},c=d.a=a
-for(s=t.n,r=t.F;!0;){q={}
+for(s=t.n,r=t.F;;){q={}
 p=c.a
 o=(p&16)===0
 n=!o
@@ -1610,7 +1610,7 @@ fe(a,b,c){var s=J.b4(b)
 if(!s.n())return a
 if(c.length===0){do a+=A.i(s.gq())
 while(s.n())}else{a+=A.i(s.gq())
-for(;s.n();)a=a+c+A.i(s.gq())}return a},
+while(s.n())a=a+c+A.i(s.gq())}return a},
 i3(){return A.ae(new Error())},
 dc(a){if(typeof a=="number"||A.eJ(a)||a==null)return J.aG(a)
 if(typeof a=="string")return JSON.stringify(a)
@@ -1648,7 +1648,7 @@ $.O.pop()}s.a+=c
 r=s.a
 return r.charCodeAt(0)==0?r:r},
 j0(a,b){var s,r,q,p,o,n,m,l=a.gB(a),k=0,j=0
-while(!0){if(!(k<80||j<3))break
+for(;;){if(!(k<80||j<3))break
 if(!l.n())return
 s=A.i(l.gq())
 B.a.v(b,s)
@@ -1663,14 +1663,14 @@ if(0>=b.length)return A.t(b,-1)
 q=b.pop()
 k+=r.length+2}else{o=l.gq();++j
 for(;l.n();p=o,o=n){n=l.gq();++j
-if(j>100){while(!0){if(!(k>75&&j>3))break
+if(j>100){for(;;){if(!(k>75&&j>3))break
 if(0>=b.length)return A.t(b,-1)
 k-=b.pop().length+2;--j}B.a.v(b,"...")
 return}}q=A.i(p)
 r=A.i(o)
 k+=r.length+q.length+4}}if(j>b.length+2){k+=5
 m="..."}else m=null
-while(!0){if(!(k>80&&b.length>3))break
+for(;;){if(!(k>80&&b.length>3))break
 if(0>=b.length)return A.t(b,-1)
 k-=b.pop().length+2
 if(m==null){k+=5
@@ -2176,7 +2176,7 @@ an(a,b){var s,r
 if(0>=b)return""
 if(b===1||a.length===0)return a
 if(b!==b>>>0)throw A.e(B.F)
-for(s=a,r="";!0;){if((b&1)===1)r=s+r
+for(s=a,r="";;){if((b&1)===1)r=s+r
 b=b>>>1
 if(b===0)break
 s+=s}return r},
@@ -2403,7 +2403,7 @@ L(a,b){var s,r,q=this
 A.w(q).h("~(1,2)").a(b)
 s=q.e
 r=q.r
-for(;s!=null;){b.$2(s.a,s.b)
+while(s!=null){b.$2(s.a,s.b)
 if(r!==q.r)throw A.e(A.b7(q))
 s=s.c}},
 aq(a,b,c){var s,r=A.w(this)
@@ -2475,7 +2475,7 @@ o=m[q]
 l=a?l+A.fa(o):l+A.i(o)}l+=")"
 return l.charCodeAt(0)==0?l:l},
 b2(){var s,r=this.$s
-for(;$.dT.length<=r;)B.a.v($.dT,null)
+while($.dT.length<=r)B.a.v($.dT,null)
 s=$.dT[r]
 if(s==null){s=this.b1()
 B.a.C($.dT,r,s)}return s},
@@ -2609,11 +2609,11 @@ bg(a,b){var s,r,q
 a=A.ac(a)
 b=b
 s=this.a
-for(;!0;)try{r=s(this,a,b)
+for(;;)try{r=s(this,a,b)
 return r}catch(q){b=q
 a=1}},
 n(){var s,r,q,p,o=this,n=null,m=0
-for(;!0;){s=o.d
+for(;;){s=o.d
 if(s!=null)try{if(s.n()){o.b=s.gq()
 return!0}else o.d=null}catch(r){n=r
 m=1
@@ -2938,7 +2938,7 @@ s=!1
 if((p&4)!==0)if(p<256){s=q.r
 s=s==null?null:s.c==null
 s=s!==!1}if(s){p=(p&4294967291)>>>0
-q.e=p}}for(;!0;a=r){if((p&8)!==0){q.r=null
+q.e=p}}for(;;a=r){if((p&8)!==0){q.r=null
 return}r=(p&4)!==0
 if(a===r)break
 q.e=(p^64)>>>0
@@ -3565,11 +3565,11 @@ if(b<r){s=b+1
 return(a.charCodeAt(b)&64512)===55296&&s<r&&(a.charCodeAt(s)&64512)===56320?s+1:s}return-1}}
 A.cM.prototype={
 k(a){var s=this,r=a.a,q=a.b,p=r.length,o=s.d,n=s.a,m=q,l=0
-while(!0){if(!(l<o&&m<p&&n.D(r.charCodeAt(m))))break;++m;++l}if(l>=s.c){o=B.d.J(r,q,m)
+for(;;){if(!(l<o&&m<p&&n.D(r.charCodeAt(m))))break;++m;++l}if(l>=s.c){o=B.d.J(r,q,m)
 o=new A.j(o,r,m,t.y)}else o=new A.f(s.b,r,m)
 return o},
 l(a,b){var s=a.length,r=this.d,q=this.a,p=0
-while(!0){if(!(p<r&&b<s&&q.D(a.charCodeAt(b))))break;++b;++p}return p>=this.c?b:-1},
+for(;;){if(!(p<r&&b<s&&q.D(a.charCodeAt(b))))break;++b;++p}return p>=this.c?b:-1},
 i(a){var s=this,r=s.H(0),q=s.d
 return r+"["+s.b+", "+s.c+".."+A.i(q===9007199254740991?"*":q)+"]"}}
 A.bw.prototype={
@@ -3617,7 +3617,7 @@ gao(){return new A.aW(this.aL(),t.au)},
 aL(){var s=this
 return function(){var r=0,q=1,p=[],o,n,m
 return function $async$gao(a,b,c){if(b===1){p.push(c)
-r=q}while(true)switch(r){case 0:o=s.a,n=s.b,m=0
+r=q}for(;;)switch(r){case 0:o=s.a,n=s.b,m=0
 case 2:if(!(m<o.length)){r=4
 break}r=5
 return a.b=o[m],1
