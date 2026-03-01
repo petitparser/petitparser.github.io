@@ -32,6 +32,7 @@ packages/vm_service/DEPENDENCIES.md
 packages/vm_service/src/DEPENDENCIES.md
 packages/vm_service/src/README.md
 packages/web/fix_data.yaml
+packages/xml/src/xpath/GEMINI.md
 prolog/prolog.dart.js
 prolog/prolog.html
 smalltalk/smalltalk.dart.js
