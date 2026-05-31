@@ -35,6 +35,8 @@ packages/web/fix_data.yaml
 packages/xml/src/xpath/AGENTS.md
 prolog/prolog.dart.js
 prolog/prolog.html
+regexp/regexp.dart.js
+regexp/regexp.html
 smalltalk/smalltalk.dart.js
 smalltalk/smalltalk.html
 tabular/tabular.dart.js
