@@ -9,10 +9,16 @@
 }
 
 a {
-  color: #7b91ad;
+  color: #0e5f8e;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-.main-content h1, .main-content h2, .main-content h3,
-.main-content h4, .main-content h5, .main-content h6 {
-  color: #003962;
+.main-content {
+  h1, h2, h3, h4, h5, h6 {
+    color: #003962;
+  }
 }
