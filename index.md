@@ -52,9 +52,9 @@ Explore interactive browser playgrounds and example grammars:
 
 ### Programming Languages
 
-- **Dart**: Comprehensive grammar for modern Dart supporting records, pattern matching, switch expressions, class modifiers, and enhanced enums ([demo](/examples/dart/dart.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/src/dart/grammar.dart)).
-- **Smalltalk**: Complete Smalltalk-80 grammar and AST generator, ported from the original Helvetia implementation ([demo](/examples/smalltalk/smalltalk.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/smalltalk.dart)).
-- **Pascal**: Classic Pascal language grammar implementing the 1978 Apple Pascal Standard ([source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/pascal.dart)).
+- **Dart**: Comprehensive grammar and AST visualizer for modern Dart supporting records, pattern matching, switch expressions, class modifiers, and enhanced enums ([demo](/examples/dart/dart.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/src/dart/grammar.dart)).
+- **Pascal**: Classic Pascal language grammar and AST visualizer implementing the 1978 Apple Pascal Standard ([demo](/examples/pascal/pascal.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/pascal.dart)).
+- **Smalltalk**: Complete Smalltalk-80 grammar and AST visualizer, ported from the original Helvetia implementation ([demo](/examples/smalltalk/smalltalk.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/smalltalk.dart)).
 
 ### Interpreters & Engines
 
