@@ -38,6 +38,8 @@ packages/vm_service/src/DEPENDENCIES.md
 packages/vm_service/src/README.md
 packages/web/fix_data.yaml
 packages/xml/src/xpath/AGENTS.md
+pascal/pascal.dart.js
+pascal/pascal.html
 prolog/prolog.dart.js
 prolog/prolog.html
 regexp/regexp.dart.js
