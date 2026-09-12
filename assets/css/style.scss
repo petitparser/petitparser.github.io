@@ -22,3 +22,40 @@ a {
     color: #003962;
   }
 }
+
+.callout-box {
+  margin: 1.5rem 0 2rem;
+  padding: 1.5rem 1.75rem;
+  background-color: #f7f9fb;
+  border: 1px solid #dce6ec;
+  border-left: 4px solid #003962;
+  border-radius: 6px;
+
+  p {
+    margin: 0 0 1.25rem;
+    color: #55606e;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+
+  .btn-cta {
+    display: inline-block;
+    padding: 0.7rem 1.4rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #003962;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 57, 98, 0.15);
+
+    &:hover {
+      background-color: #0e5f8e;
+      text-decoration: none;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 8px rgba(0, 57, 98, 0.2);
+    }
+  }
+}
+

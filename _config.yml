@@ -4,3 +4,10 @@ google_analytics: G-QK0KCHXW3F
 
 title: PetitParser
 description: Build fast, composable, and type-safe grammars and parsers.
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+

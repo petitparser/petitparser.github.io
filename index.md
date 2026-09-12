@@ -30,6 +30,15 @@ void main() {
 }
 ```
 
+## Interactive Examples
+
+Experience PetitParser live in your browser. Explore interactive grammar visualizers, programming languages, interpreters, and format parsers:
+
+<div class="callout-box">
+  <p>Run live parsers, inspect syntax trees, and experiment with complete grammars: Dart, Pascal, Smalltalk, Lisp, Prolog, Regular Expressions, JSON, XML, BibTeX, and more.</p>
+  <a href="https://petitparser.github.io/examples/index.html" class="btn-cta">Explore Interactive Examples &rarr;</a>
+</div>
+
 ## Supported Languages
 
 PetitParser is available in many programming languages:
@@ -45,35 +54,6 @@ PetitParser is available in many programming languages:
 - [Smalltalk](https://www.lukas-renggli.ch/smalltalk/helvetia/petitparser)
 - [Swift](https://github.com/philipparndt/swift-petitparser)
 - [TypeScript](https://github.com/mindplay-dk/petitparser-ts)
-
-## Examples & Grammars
-
-Explore interactive browser playgrounds and example grammars:
-
-### Programming Languages
-
-- **Dart**: Comprehensive grammar and AST visualizer for modern Dart supporting records, pattern matching, switch expressions, class modifiers, and enhanced enums ([demo](/examples/dart/dart.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/src/dart/grammar.dart)).
-- **Pascal**: Classic Pascal language grammar and AST visualizer implementing the 1978 Apple Pascal Standard ([demo](/examples/pascal/pascal.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/pascal.dart)).
-- **Smalltalk**: Complete Smalltalk-80 grammar and AST visualizer, ported from the original Helvetia implementation ([demo](/examples/smalltalk/smalltalk.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/smalltalk.dart)).
-
-### Interpreters & Engines
-
-- **Lisp Interpreter**: Scheme-like evaluator supporting lexical scoping, lambda closures, macros, and native functions ([demo](/examples/lisp/lisp.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/lisp.dart)).
-- **Prolog Interpreter**: Logic programming inference engine featuring knowledge base parsing, SLD-resolution search, and unification ([demo](/examples/prolog/prolog.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/prolog.dart)).
-- **Regular Expressions**: Automata compiler that parses regex syntax, compiles to Non-deterministic Finite Automata (NFA), and steps through matching with an interactive visualizer ([demo](/examples/regexp/regexp.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/regexp.dart)).
-
-### Mathematics & Expressions
-
-- **Math Evaluator**: Arithmetic expression evaluator built with `ExpressionBuilder`, handling operator precedence, associativity, functions, and variables ([demo](/examples/math/eval.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/math.dart)).
-- **Expression Plotter**: Parses mathematical expressions and plots function curves across coordinates on an HTML5 canvas ([demo](/examples/math/plot.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/math.dart)).
-
-### Formats & Protocols
-
-- **URI Parser**: RFC-3986 parser deconstructing URIs into scheme, authority, credentials, host, port, path, query parameters, and fragments ([demo](/examples/uri/uri.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/uri.dart)).
-- **BibTeX**: Extracts bibliographic entries, citation keys, tags, and key-value fields from BibTeX database files ([demo](/examples/bibtex/bibtex.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/bibtex.dart)).
-- **Tabular Text (CSV / TSV)**: Configurable delimited text parser with support for custom separators, quotes, and escaped values ([demo](/examples/tabular/tabular.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/tabular.dart)).
-- **JSON**: RFC-8259 parser comparing PetitParser against native platform JSON parsing throughput and mapping ([demo](/examples/json/json.html), [source](https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/json.dart)).
-- **XML & XPath**: Parses XML event streams, produces traversable DOM syntax trees, formats XML, and executes XPath queries ([demo](/examples/xml/xml.html), [source](https://github.com/petitparser/dart-petitparser-examples/tree/main/lib)).
 
 ## Background & Theory
 
