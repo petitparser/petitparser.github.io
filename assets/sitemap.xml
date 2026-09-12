@@ -4,34 +4,22 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>https://petitparser.github.io/</loc>
-  </url>
-  <url>
-    <loc>https://petitparser.github.io/examples/index.html</loc>
-  </url>
-  <url>
-    <loc>https://petitparser.github.io/examples/lisp/lisp.html</loc>
-  </url>
-  <url>
-    <loc>https://petitparser.github.io/examples/prolog/prolog.html</loc>
-  </url>
-  <url>
-    <loc>https://petitparser.github.io/examples/math/eval.html</loc>
-  </url>
-  <url>
-    <loc>https://petitparser.github.io/examples/math/plot.html</loc>
-  </url>
-  <url>
-    <loc>https://petitparser.github.io/examples/uri/uri.html</loc>
-  </url>
-  <url>
-    <loc>https://petitparser.github.io/examples/xml/xml.html</loc>
-  </url>
-  <url>
-    <loc>https://petitparser.github.io/examples/json/json.html</loc>
-  </url>
-  <url>
-    <loc>https://petitparser.github.io/examples/smalltalk/smalltalk.html</loc>
-  </url>
+  <url><loc>https://petitparser.github.io/</loc></url>
+  <url><loc>https://petitparser.github.io/examples/index.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/pascal/pascal.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/prolog/prolog.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/lisp/lisp.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/index.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/regexp/regexp.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/python/python.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/dart/dart.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/markdown/markdown.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/smalltalk/smalltalk.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/tabular/tabular.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/math/eval.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/math/plot.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/xml/xml.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/json/json.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/bibtex/bibtex.html</loc></url>
+  <url><loc>https://petitparser.github.io/examples/uri/uri.html</loc></url>
 </urlset>
