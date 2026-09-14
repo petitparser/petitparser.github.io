@@ -1,27 +1,63 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Math Evaluator</title>
-  <link rel="stylesheet"
-        href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
-  <style>
-    #input { font-family: monospace; width: 100%; }
-    #error { color: red; }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Math Plotter</title>
+  <link rel="stylesheet" href="../shared/style.css">
 </head>
 <body>
-  <h1>Math Plotter</h1>
+  <header class="page-header">
+    <h1 class="project-name">Math Plotter</h1>
+    <h2 class="project-tagline">Real-time expression parser that animates dynamic multi-variable formulas on an HTML5 canvas.</h2>
+    <div class="header-nav">
+      <a class="btn-banner" href="/">Website</a>
+      <a class="btn-banner" href="https://github.com/petitparser/dart-petitparser-examples/blob/main/web/math/plot.dart" target="_blank" rel="noopener">Source</a>
+    </div>
+  </header>
 
-  <h2>Function f<sub>t</sub>(x)</h2>
-  <input type="text" id="input" value="x * sin(10 * cos(t / 20) / x)"/>
-  <p id="error"></p>
+  <main class="container">
+    <div class="card">
+      <h2>Presets</h2>
+      <div class="button-group">
+        <button type="button" class="preset-btn" id="preset-ripple">Oscillating Ripple</button>
+        <button type="button" class="preset-btn" id="preset-sine">Harmonic Wave</button>
+        <button type="button" class="preset-btn" id="preset-damped">Damped Oscillator</button>
+        <button type="button" class="preset-btn" id="preset-standing">Standing Wave</button>
+      </div>
 
-  <h2>Graph</h2>
-  <canvas id="canvas"></canvas>
+      <h2>Function f<sub>t</sub>(x)</h2>
+      <input type="text" id="input" value="x * sin(10 * cos(t / 20) / x)" spellcheck="false" autocomplete="off" />
+      <div id="error" class="error" style="display: none;"></div>
+    </div>
+
+    <div class="card" style="text-align: center;">
+      <h2 style="text-align: left;">Graph Viewport</h2>
+      <div style="width: 100%; overflow: hidden; border-radius: 4px; border: 1px solid var(--color-border); background: #ffffff;">
+        <canvas id="canvas" style="display: block; width: 100%;"></canvas>
+      </div>
+      <p style="font-size: 1.3rem; color: var(--color-text-muted); margin-top: 1rem; margin-bottom: 0;">
+        Parameters: <code>x &isin; [-5, 5]</code>, <code>y &isin; [-2.5, 2.5]</code>, <code>t</code> is seconds since page load.
+      </p>
+    </div>
+
+    <div class="card markdown-body" data-markdown>
+## About Math Plotter
+
+This real-time plotter evaluates mathematical functions of one spatial variable (_x_) and time (_t_) directly onto an HTML5 canvas at <span id="fps-display">30 FPS</span>.
+
+### Key Features
+
+- **Parsed Expression Tree**: The mathematical expression is parsed once into an AST, then repeatedly evaluated across horizontal canvas pixel columns for each animation frame.
+- **Error Handling**: Syntactic and evaluation errors display an inline warning without interrupting the animation loop.
+- **Canvas Rendering**: Adapts to device pixel ratios and window resizing events to maintain crisp graph lines.
+    </div>
+
+    <footer>
+      Built with <a href="/">PetitParser</a>.
+    </footer>
+  </main>
 
   <script src="plot.dart.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QK0KCHXW3F"></script>
-  <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-QK0KCHXW3F');</script>
 </body>
 </html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Markdown Parser &amp; Visualizer</title>
+  <link rel="stylesheet" href="../shared/style.css">
+  <style>
+    /* Editor container with live syntax highlighting overlay */
+    .editor-container {
+      position: relative;
+      width: 100%;
+      height: 240px;
+      border: 1px solid #d1d5db;
+      border-radius: 4px;
+      background: #ffffff;
+      overflow: hidden;
+      margin-bottom: 1.5rem;
+    }
+    .editor-highlight,
+    .editor-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0 !important;
+      padding: 12px !important;
+      border: none !important;
+      outline: none !important;
+      box-sizing: border-box !important;
+      font-family: var(--font-mono) !important;
+      font-size: 14px !important;
+      font-weight: 400 !important;
+      line-height: 22px !important;
+      letter-spacing: 0 !important;
+      tab-size: 4 !important;
+      white-space: pre-wrap !important;
+      word-break: break-word !important;
+      overflow: auto !important;
+    }
+    .editor-highlight {
+      z-index: 1;
+      background: transparent;
+      pointer-events: none;
+      color: #24292f;
+    }
+    .editor-highlight span {
+      font-family: inherit !important;
+      font-size: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+      letter-spacing: inherit !important;
+    }
+    .editor-input {
+      z-index: 2;
+      background: transparent !important;
+      color: transparent !important;
+      -webkit-text-fill-color: transparent !important;
+      caret-color: var(--color-accent) !important;
+      resize: none !important;
+    }
+    .editor-input::selection {
+      background: rgba(14, 95, 142, 0.25);
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Syntax Highlighting token classes */
+    .hl-heading { color: #6f42c1; font-weight: 700 !important; }
+    .hl-bold { color: var(--color-primary); font-weight: 700 !important; }
+    .hl-italic { color: #953800; font-style: italic; }
+    .hl-strike { color: #8c959f; text-decoration: line-through; }
+    .hl-code { color: #cf222e; background-color: rgba(175, 184, 193, 0.2); padding: 0.1em 0.3em; border-radius: 3px; }
+    .hl-link { color: var(--color-accent); text-decoration: underline; }
+    .hl-url { color: var(--color-primary); text-decoration: underline; }
+    .hl-punct { color: #8c959f; }
+    .hl-blockquote { color: #116329; border-left: 3px solid #2da44e; padding-left: 0.4rem; }
+    .hl-list { color: #cf222e; font-weight: 700 !important; }
+    .hl-task { color: var(--color-accent); font-weight: 700 !important; }
+    .hl-table { color: var(--color-primary); font-weight: 700 !important; }
+    .hl-info { color: #8250df; font-style: italic; }
+
+    #panel-preview {
+      font-family: var(--font-sans);
+    }
+  </style>
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="project-name">Markdown Parser &amp; Visualizer</h1>
+    <h2 class="project-tagline">Parses CommonMark and GFM Markdown with live syntax highlighting, HTML rendering, and typed AST inspection.</h2>
+    <div class="header-nav">
+      <a class="btn-banner" href="/">Website</a>
+      <a class="btn-banner" href="https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/markdown.dart" target="_blank" rel="noopener">Source</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="card">
+      <h2>Presets</h2>
+      <div class="button-group">
+        <button class="preset-btn" id="btn-commonmark">CommonMark Basics</button>
+        <button class="preset-btn" id="btn-tables">GFM Tables &amp; Tasks</button>
+        <button class="preset-btn" id="btn-code">Code Blocks &amp; Quotes</button>
+        <button class="preset-btn" id="btn-inlines">Complex Inlines</button>
+      </div>
+
+      <h2>Live Markdown Editor</h2>
+      <div class="editor-container">
+        <div id="editor-highlight" class="editor-highlight"></div>
+        <textarea id="input" class="editor-input" spellcheck="false" autocomplete="off" autocapitalize="off"></textarea>
+      </div>
+
+      <div class="stats" id="stats"></div>
+    </div>
+
+    <div class="card tabs">
+      <div class="tab-buttons">
+        <button class="active">Rendered HTML</button>
+        <button>HTML Source</button>
+        <button>Abstract Syntax Tree</button>
+      </div>
+
+      <div id="panel-preview" class="tab-body active markdown-body"></div>
+      <div id="panel-html-source" class="tab-body output-panel"></div>
+      <div id="panel-ast" class="tab-body output-panel"></div>
+    </div>
+    
+    <div class="card markdown-body" data-markdown>
+## About Markdown Parser
+
+This parser implements core **CommonMark 0.31.2** specifications and popular **GitHub Flavored Markdown (GFM)** extensions using parser combinators.
+
+### Key Parser Features
+
+- **Block and Inline Structure**: Parses document blocks (headings, blockquotes, lists, tables, code blocks) and nested inlines (emphasis, autolinks, code spans, strikethrough).
+- **GFM Extensions**: Includes support for pipe tables with alignment indicators and interactive task list checkboxes (`[x]`).
+- **AST and HTML Output**: Generates an immutable, strongly-typed AST tree that can be traversed, formatted, or rendered to HTML.
+- **Live Syntax Highlighting**: Token streams produced by the parser drive live highlighting directly in the web editor.
+    </div>
+    
+    <footer>
+      Built with <a href="/">PetitParser</a>.
+    </footer>
+  </main>
+
+  <script src="markdown.dart.js"></script>
+</body>
+</html>

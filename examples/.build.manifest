@@ -8,6 +8,8 @@ json/json.dart.js
 json/json.html
 lisp/lisp.dart.js
 lisp/lisp.html
+markdown/markdown.dart.js
+markdown/markdown.html
 math/eval.dart.js
 math/eval.html
 math/plot.dart.js
@@ -26,6 +28,7 @@ packages/lints/recommended.yaml
 packages/node_preamble/preamble.js
 packages/node_preamble/preamble.min.js
 packages/petitparser_examples/src/dart/AGENTS.md
+packages/petitparser_examples/src/python/AGENTS.md
 packages/test/dart.js
 packages/test/src/runner/browser/static/default.html.tpl
 packages/test/src/runner/browser/static/favicon.ico
@@ -42,8 +45,12 @@ pascal/pascal.dart.js
 pascal/pascal.html
 prolog/prolog.dart.js
 prolog/prolog.html
+python/python.dart.js
+python/python.html
 regexp/regexp.dart.js
 regexp/regexp.html
+shared/shared.dart.js
+shared/style.css
 smalltalk/smalltalk.dart.js
 smalltalk/smalltalk.html
 tabular/tabular.dart.js

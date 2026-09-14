@@ -1,29 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Math Evaluator</title>
-  <link rel="stylesheet"
-        href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
-  <style>
-    #input, #result, #tree { font-family: monospace; width: 100%; }
-    .error { color: red; }
-  </style>
+  <link rel="stylesheet" href="../shared/style.css">
 </head>
 <body>
-  <h1>Math Evaluator</h1>
+  <header class="page-header">
+    <h1 class="project-name">Math Evaluator</h1>
+    <h2 class="project-tagline">Parses and evaluates mathematical expressions with operator precedence and function calls.</h2>
+    <div class="header-nav">
+      <a class="btn-banner" href="/">Website</a>
+      <a class="btn-banner" href="https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/math.dart" target="_blank" rel="noopener">Source</a>
+    </div>
+  </header>
 
-  <h2>Expression</h2>
-  <input type="text" id="input" value="1 + 2 * 3"/>
+  <main class="container">
+    <div class="card">
+      <h2>Presets</h2>
+      <div class="button-group">
+        <button type="button" class="preset-btn" id="preset-arith">Basic Arithmetic</button>
+        <button type="button" class="preset-btn" id="preset-precedence">Precedence &amp; Parentheses</button>
+        <button type="button" class="preset-btn" id="preset-functions">Trigonometry &amp; Functions</button>
+        <button type="button" class="preset-btn" id="preset-powers">Exponents &amp; Roots</button>
+      </div>
 
-  <h2>Result</h2>
-  <p id="result"></p>
+      <h2>Expression</h2>
+      <input type="text" id="input" value="1 + 2 * 3" spellcheck="false" autocomplete="off" />
 
-  <h2>Tree</h2>
-  <p id="tree"></p>
+      <div style="margin-top: 1rem;">
+        <label>Computed Result:</label>
+        <div id="result" class="result hide-empty"></div>
+        <div id="error" class="error hide-empty"></div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Parse Tree</h2>
+      <div id="tree" style="font-family: var(--font-mono); font-size: 1.35rem; line-height: 1.7; background: var(--color-pre-bg); border: 1px solid var(--color-border); border-radius: 4px; padding: 1.5rem; max-height: 380px; overflow-y: auto;"></div>
+    </div>
+
+    <div class="card markdown-body" data-markdown>
+## About Math Evaluator
+
+This interactive evaluator parses mathematical expressions into an abstract syntax tree (**AST**) and computes numerical results.
+
+### Key Parser Features
+
+- **ExpressionBuilder Combinator**: Uses PetitParser's `ExpressionBuilder` to define operator precedence and associativity rules concisely.
+- **Associativity and Precedence**: Differentiates standard left-associative operations (addition, subtraction, multiplication, division) and right-associative operations (exponentiation `^`).
+- **Function and Constant Support**: Parses multi-argument function calls (`sin(x)`, `atan2(y, x)`, `sqrt(x)`) and mathematical constants (`pi`, `e`).
+- **Separation of Parsing and Evaluation**: Builds an immutable `Expression` AST hierarchy that evaluates against arbitrary variable dictionaries.
+    </div>
+
+    <footer>
+      Built with <a href="/">PetitParser</a>.
+    </footer>
+  </main>
 
   <script src="eval.dart.js"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QK0KCHXW3F"></script>
-  <script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-QK0KCHXW3F');</script>
 </body>
 </html>
