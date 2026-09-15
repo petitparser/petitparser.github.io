@@ -11,8 +11,9 @@
     <h1 class="project-name">Prolog Interpreter</h1>
     <h2 class="project-tagline">Logic programming inference engine featuring knowledge base parsing, SLD-resolution, and unification.</h2>
     <div class="header-nav">
-      <a class="btn-banner" href="/">Website</a>
-      <a class="btn-banner" href="https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/prolog.dart" target="_blank" rel="noopener">Source</a>
+      <a class="btn" href="https://petitparser.github.io/">Website</a>
+      <a class="btn" href="../index.html">Examples</a>
+      <a class="btn" href="https://github.com/petitparser/dart-petitparser-examples/blob/main/lib/prolog.dart" target="_blank" rel="noopener">Source</a>
     </div>
   </header>
 
@@ -20,9 +21,9 @@
     <div class="card">
       <h2>Presets</h2>
       <div class="button-group">
-        <button class="preset-btn" id="preset-family">Family Relations</button>
-        <button class="preset-btn" id="preset-graph">Graph Reachability</button>
-        <button class="preset-btn" id="preset-einstein">Einstein's Puzzle</button>
+        <button type="button" class="preset-btn" id="preset-family">Family Relations</button>
+        <button type="button" class="preset-btn" id="preset-graph">Graph Reachability</button>
+        <button type="button" class="preset-btn" id="preset-einstein">Einstein's Puzzle</button>
       </div>
 
       <h2>Knowledge Base (Rules &amp; Facts)</h2>
@@ -45,7 +46,7 @@ ancestor(X, Y) :- parent_child(X, Z), ancestor(Z, Y).</textarea>
       <h2>Query</h2>
       <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
         <input type="text" id="query" value="sibling(X, felicia)" spellcheck="false" autocomplete="off" style="flex: 1; font-family: var(--font-mono); margin-bottom: 0; min-width: 220px;" />
-        <button id="ask" class="button" style="margin-bottom: 0; align-self: stretch;">Ask Query</button>
+        <button type="button" id="ask" class="button" style="margin-bottom: 0; align-self: stretch;">Ask Query</button>
       </div>
     </div>
 
@@ -68,7 +69,7 @@ Prolog is a declarative logic programming language where computation is carried 
     </div>
 
     <footer>
-      Built with <a href="/">PetitParser</a>.
+      Built with <a href="https://petitparser.github.io/">PetitParser</a>.
     </footer>
   </main>
 
