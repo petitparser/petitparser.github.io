@@ -5155,7 +5155,10 @@ A.d(b)
 return new A.H(A.o7(a),A.o8(b),t.q)},
 $S:117}
 A.j2.prototype={
-$1(a){return A.q(a.n(0,1))+a.n(0,2).toUpperCase()},
+$1(a){var s=a.n(0,1),r=a.n(0,2)
+r=r==null?null:r.toUpperCase()
+if(r==null)r=""
+return A.q(s)+r},
 $S:119}
 A.hI.prototype={}
 A.aG.prototype={

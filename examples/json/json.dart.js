@@ -4894,9 +4894,9 @@ $S:22}
 A.f1.prototype={
 $2(a,b){var s
 A.e(a)
-s=B.y.u(0,A.e(b))
-s.toString
-return s},
+A.e(b)
+s=B.y.u(0,b)
+return s==null?b:s},
 $S:9}
 A.f2.prototype={
 $2(a,b){A.e(a)
