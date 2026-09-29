@@ -112,17 +112,18 @@
         </div>
       </div>
       <div style="width: 100%; overflow: hidden; border-radius: 6px; border: 1px solid var(--color-border); background: #ffffff;">
-        <canvas id="canvas" style="display: block; width: 100%; height: 500px; cursor: grab; user-select: none; touch-action: none; background: #ffffff;"></canvas>
+        <canvas id="canvas" style="display: block; width: 100%; height: auto; max-height: 500px; aspect-ratio: 4 / 3; cursor: grab; user-select: none; touch-action: none; background: #ffffff;"></canvas>
       </div>
       <p style="font-size: 1.3rem; color: var(--color-text-muted); margin-top: 1rem; margin-bottom: 0;">
         Parameters: <code id="viewport-range">x &isin; [-5, 5], y &isin; [-5, 5]</code>, <code>t</code> is seconds since page load.
       </p>
       <p style="font-size: 1.2rem; color: var(--color-text-muted); margin-top: 0.5rem; margin-bottom: 0;">
-        <span id="interaction-hint">Left-drag to rotate &bull; Shift+drag to pan &bull; Scroll to zoom &bull; Double-click to reset</span>
+        <span id="interaction-hint">Drag to rotate &bull; Shift/2-finger drag to pan &bull; Pinch/scroll to zoom &bull; Double-tap to reset</span>
       </p>
     </div>
 
-    <div class="card markdown-body" data-markdown>
+    <div class="card markdown-body">
+      <script type="text/markdown">
 ## About Math Plotter
 
 This real-time application demonstrates PetitParser by parsing dynamic mathematical formulas of spatial coordinates (_x_, _y_) and time (_t_), evaluating the compiled expression tree across thousands of grid points per frame, and rendering interactive 2D curves and 3D surfaces in WebGL at <span id="fps-display">60 FPS</span>.
@@ -133,6 +134,7 @@ This real-time application demonstrates PetitParser by parsing dynamic mathemati
 - **Function & Variable Bindings**: Combines combinators (`seq2`, `starSeparated`, `skip`) to parse multi-variable identifiers (`x`, `y`, `t`), mathematical constants (`pi`, `e`), and function invocations (`sin`, `cos`, `tan`, `sqrt`, `exp`, `log`, `abs`).
 - **AST Generation & Fast Evaluation**: Transforms the parsed input into an Abstract Syntax Tree ([Expression]) that is evaluated repeatedly with variable environment maps in real-time animation loops.
 - **Precise Error Diagnostics**: Leverages PetitParser's failure reporting to pinpoint exact character offsets and provide descriptive error messages as formulas are typed.
+      </script>
     </div>
 
     <footer>
